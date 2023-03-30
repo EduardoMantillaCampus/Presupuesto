@@ -1,0 +1,34 @@
+*{
+
+}
+:root{
+    --color1: #117a65;
+    --color2:  #7d3c98;
+}
+
+
+.caja-ingresos{
+    background-color:  var(--color1);
+}
+.caja-egresos{
+    background-color: var(--color2);
+}
+.btn-formulario{
+    color: var(--color1);
+    font-size: 30px;
+}
+.ingresos h3{
+    color: var(--color1);
+}
+.egresos h3{
+    color: var(--color2);
+}
+.ingresos .dato, .egresos .dato{
+    color: black;
+}
+.ingresos .valor{
+    color: red;
+}
+.egresos .valor{
+    color: green;
+}
