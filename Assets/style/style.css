@@ -1,17 +1,38 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 
-}
 :root{
     --color1: #117a65;
     --color2:  #7d3c98;
+    --tipografia1:'Roboto', sans-serif;
+    --tipografia2:'Delicious Handrawn', cursive;
 }
 
-
+*{
+    font-family: var(--tipografia1);
+}
+.body{
+    background: url('/Assets/img/4907157.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.capa{
+    background-color: #fff;
+}
 .caja-ingresos{
     background-color:  var(--color1);
 }
+.caja-ingresos h5{
+    font-family: var(--tipografia2);
+    font-size: 25px;
+}
 .caja-egresos{
     background-color: var(--color2);
+}
+.caja-egresos h5{
+    font-family: var(--tipografia2);
+    font-size: 25px;
 }
 .btn-formulario{
     color: var(--color1);
@@ -19,9 +40,20 @@
 }
 .ingresos h3{
     color: var(--color1);
+    font-family: var(--tipografia2);
 }
 .egresos h3{
     color: var(--color2);
+    font-family: var(--tipografia2);
+}
+.box1 h6{
+    font-family: var(--tipografia2);
+    font-size: 30px;
+}
+.box1 h1{
+    font-family: var(--tipografia1);
+    font-size: 30px;
+    font-weight: 600;
 }
 .ingresos .dato, .egresos .dato{
     color: black;

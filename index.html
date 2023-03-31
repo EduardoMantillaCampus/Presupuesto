@@ -19,87 +19,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="Assets/js/main.js"></script>
 </head>
 
 <body>
-    <section class="container">
-        <div class="d-flex justify-content-around vh-100 flex-wrap">
-            <div class="col col-12 col-md-12 col-lg-4 text-center h-100 d-flex flex-column justify-content-center">
-                <div class="col-12">
-                    <h6>Presupuesto Disponible</h6>
-                    <h1>$ 70.000.000</h1>
-                    <div class="caja-ingresos col-12 mt-5 pt-1 pb-1 d-flex justify-content-around text-light">
-                        <h5>INGRESOS</h5>
-                        <h5>$13.000.000</h5>
-                    </div>
-                    <div class="caja-egresos mt-1 col-12 pt-1 pb-1 d-flex justify-content-around text-light">
-                        <h5>EGRESOS</h5>
-                        <h5>$13.000.000</h5>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <form action="">
-                            <div class="row">
-                                <div class="col col-2">
-                                    <select id="disabledSelect" class="form-select">
-                                        <option>+</option>
-                                        <option>-</option>
-                                    </select>
-                                </div>
-                                <div class="col">
-                                    <input type="text" class="form-control">
+    <div class="body">
+        <div class="capa">
+            <section class="container">
+                <div class="d-flex justify-content-around vh-100 flex-wrap">
+                    <div class="col col-12 col-md-12 col-lg-4 text-center h-100 d-flex flex-column justify-content-center">
+                        <div class="col-12 box1">
+                            <h6>Presupuesto Disponible</h6>
+                            <h1>$ 70.000.000</h1>
+                            <div class="caja-ingresos col-12 mt-5 pt-1 pb-1 d-flex justify-content-around text-light">
+                                <h5>INGRESOS</h5>
+                                <h4>$13.000.000</h4>
+                            </div>
+                            <div class="caja-egresos mt-1 col-12 pt-1 pb-1 d-flex justify-content-around text-light">
+                                <h5>EGRESOS</h5>
+                                <div class="d-flex">
+                                <h4>$13.000.000</h4>
                                 </div>
                             </div>
-                            <div class="mb-3 mt-2">
-                                <input type="text" class="form-control">
+                            <div class="progress mt-2">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 40.5%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">40.5%</div>
                             </div>
-                            <button class="btn"><i class="fa-solid fa-circle-check btn-formulario"></i></button>
-                        </form>
+                            <div class="col-12 mt-3">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col col-3">
+                                            <select class="form-select">
+                                                <option>+</option>
+                                                <option>-</option>
+                                            </select>
+                                        </div>
+                                        <div class="col col-9">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 mt-2">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <button class="btn"><i class="fa-solid fa-circle-check btn-formulario"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-12 col-lg-4 d-flex flex-column justify-content-center">
+                        <div class="col-12 ingresos">
+                            <h3>Ingresos</h3>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td class="dato">@mdo</td>
+                                        <td class="valor">@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dato">@fat</td>
+                                        <td class="valor">@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dato">@twitter</td>
+                                        <td class="valor">@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-12 mt-5 egresos">
+                            <h3>Egresos</h3>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td class="dato">@mdo</td>
+                                        <td class="valor">@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dato">@fat</td>
+                                        <td class="valor">@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dato">@twitter</td>
+                                        <td class="valor">@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col col-12 col-md-12 col-lg-4 d-flex flex-column justify-content-center">
-                <div class="col-12 ingresos">
-                    <h3>Ingresos</h3>
-                    <table class="table table-striped">
-                        <tbody>
-                            <tr>
-                                <td class="dato">@mdo</td>
-                                <td class="valor">@mdo</td>
-                            </tr>
-                            <tr>
-                                <td class="dato">@fat</td>
-                                <td class="valor">@fat</td>
-                            </tr>
-                            <tr>
-                                <td class="dato">@twitter</td>
-                                <td class="valor">@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-12 mt-5 egresos">
-                    <h3>Egresos</h3>
-                    <table class="table table-striped">
-                        <tbody>
-                            <tr>
-                                <td class="dato">@mdo</td>
-                                <td class="valor">@mdo</td>
-                            </tr>
-                            <tr>
-                                <td class="dato">@fat</td>
-                                <td class="valor">@fat</td>
-                            </tr>
-                            <tr>
-                                <td class="dato">@twitter</td>
-                                <td class="valor">@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
+    </div>
 </body>
 
 </html>
